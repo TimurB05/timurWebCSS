@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookify - Kontakt</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body style="background-color: #F6DDCC; font-family: Arial, sans-serif; color: #333333;">
+
+    <nav class="navigacija" style="background-color: #4C956C; text-align: center; padding: 10px 0;">
+        <ul class="linkovi" style="list-style: none; display: flex; justify-content: center; gap: 20px; margin: 0; padding: 0;">
+            <li><a href="index.html" class="navigacija-link" style="text-decoration: none; color: white; font-weight: bold;">Početna</a></li>
+            <li><a href="kategorije.html" class="navigacija-link" style="text-decoration: none; color: white; font-weight: bold;">Kategorije</a></li>
+            <li><a href="bestseleri.html" class="navigacija-link" style="text-decoration: none; color: white; font-weight: bold;">Bestseleri</a></li>
+            <li><a href="kontakt.html" class="navigacija-link" style="text-decoration: none; color: white; font-weight: bold;">Kontakt</a></li>
+        </ul>
+    </nav>
+
+    <header class="zaglavlje" style="background-color: #7D3C98; color: white; text-align: center; padding: 40px 0; margin-bottom: 20px; border-radius: 10px;">
+        <h1 id="naslov" style="font-size: 2.5em; margin-bottom: 10px;">Kontaktirajte Nas</h1>
+        <p class="opis-zaglavlja" style="font-style: italic; font-size: 1.2em;">Imate pitanja? Rado ćemo vam pomoći!</p>
+    </header>
+
+    <main class="sadrzaj" style="width: 90%; margin: auto; padding: 20px;">
+        <section class="kontakt-forma" style="background-color: #EBEAFF; padding: 30px; border-radius: 10px; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);">
+            <h2 class="forma-naslov" style="text-align: center; color: #4C956C; font-size: 1.8em;">Kontakt Forma</h2>
+            <form method="POST" action="mailto:timur@bookify.com" enctype="text/plain" class="forma" style="display: flex; flex-direction: column; gap: 20px;">
+                <div class="forma-polje" style="display: flex; flex-direction: column; gap: 10px;">
+                    <label for="ime" style="font-size: 1em;">Ime:</label>
+                    <input type="text" id="ime" name="ime" style="padding: 10px; border: 1px solid #7D3C98; border-radius: 5px;" required>
+                </div>
+                <div class="forma-polje" style="display: flex; flex-direction: column; gap: 10px;">
+                    <label for="email" style="font-size: 1em;">Email:</label>
+                    <input type="email" id="email" name="email" style="padding: 10px; border: 1px solid #7D3C98; border-radius: 5px;" required>
+                </div>
+                <div class="forma-polje" style="display: flex; flex-direction: column; gap: 10px;">
+                    <label for="poruka" style="font-size: 1em;">Poruka:</label>
+                    <textarea id="poruka" name="poruka" rows="5" placeholder="Unesite vašu poruku" style="padding: 10px; border: 1px solid #7D3C98; border-radius: 5px;"></textarea>
+                </div>
+                <div class="forma-polje" style="gap: 10px;">
+                    <span style="font-size: 1em;">Vaši Interesi:</span>
+                    <div class="forma-checkbox" style="display: flex; flex-wrap: wrap; gap: 15px;">
+                        <label><input type="checkbox" name="zanr" value="fikcija"> Fikcija</label>
+                        <label><input type="checkbox" name="zanr" value="naucna-fantastika"> Naučna Fantastika</label>
+                        <label><input type="checkbox" name="zanr" value="ljubavni-romani"> Ljubavni Romani</label>
+                    </div>
+                </div>
+                <div class="forma-polje" style="gap: 10px;">
+                    <span style="font-size: 1em;">Da li ste već kupovali kod nas?</span>
+                    <div class="forma-radio" style="display: flex; gap: 15px;">
+                        <label><input type="radio" name="kupovina" value="da" checked> Da</label>
+                        <label><input type="radio" name="kupovina" value="ne"> Ne</label>
+                    </div>
+                </div>
+                <div class="forma-polje" style="display: flex; flex-direction: column; gap: 10px;">
+                    <label for="zanr" style="font-size: 1em;">Odaberite Vaš Omiljeni Žanr:</label>
+                    <select id="zanr" name="zanr" style="padding: 10px; border: 1px solid #7D3C98; border-radius: 5px;">
+                        <option value="fikcija">Fikcija</option>
+                        <option value="naucna-fantastika">Naučna Fantastika</option>
+                        <option value="ljubavni-romani">Ljubavni Romani</option>
+                        <option value="misterije">Misterije</option>
+                        <option value="biografije">Biografije</option>
+                        <option value="edukativne-knjige">Edukativne Knjige</option>
+                        <option value="fantazija">Fantazija</option>
+                        <option value="horor">Horor</option>
+                    </select>
+                </div>
+                <div class="forma-polje" style="display: flex; justify-content: space-between;">
+                    <input type="submit" value="Pošalji" class="dugme" style="padding: 10px 20px; background-color: #4C956C; color: white; border: none; border-radius: 5px; cursor: pointer;">
+                    <input type="reset" value="Poništi" class="dugmePonisti" style="padding: 10px 20px; background-color: #df2828; color: white; border: none; border-radius: 5px; cursor: pointer;">
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <footer class="podnozje" style="background-color: #4C956C; color: white; text-align: center; padding: 10px;">
+        <p class="podnozje-tekst" style="font-size: 0.9em;">© 2024 Bookify - Sva prava zadržana.</p>
+    </footer>
+
+</body>
+
+</html>
